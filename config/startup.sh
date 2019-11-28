@@ -3,7 +3,7 @@ if !(which java 2>/dev/null); then
 	echo '请安装java环境'
 	exit
 fi
-PROJECT_NAME="$1"
+PROJECT_NAME="elk-demo"
 JAVALOG_DIR="/opt/project/logs"
 DT=`date +"%Y%m%d_%H%M%S"`
 
