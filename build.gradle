@@ -1,0 +1,23 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.9.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile 'net.logstash.logback:logstash-logback-encoder:4.11'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+//    compile 'org.springframework.boot:spring-boot-starter-log4j2'
+
+}

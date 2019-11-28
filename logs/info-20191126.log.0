@@ -1,0 +1,12 @@
+2019-11-26 17:33:15.663 [main] INFO  c.example.elkdemo.ElkDemoApplication -Starting ElkDemoApplication on WIN-87MG5IB5SKJ with PID 20660 (D:\workspace\elk-demo\out\production\classes started by Administrator in D:\workspace\elk-demo)
+2019-11-26 17:33:15.680 [main] INFO  c.example.elkdemo.ElkDemoApplication -No active profile set, falling back to default profiles: default
+2019-11-26 17:33:17.312 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8084 (http)
+2019-11-26 17:33:17.346 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2019-11-26 17:33:17.349 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-26 17:33:17.543 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2019-11-26 17:33:17.543 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1794 ms
+2019-11-26 17:33:17.840 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 17:33:18.102 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8084 (http) with context path ''
+2019-11-26 17:33:18.108 [main] INFO  c.example.elkdemo.ElkDemoApplication -Started ElkDemoApplication in 7.519 seconds (JVM running for 10.133)
+2019-11-26 17:33:18.112 [main] INFO  c.example.elkdemo.ElkDemoApplication -============启动成功================
+2019-11-26 17:45:59.892 [Thread-20] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
