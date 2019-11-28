@@ -8,4 +8,4 @@ JAVALOG_DIR="/opt/project/logs"
 DT=`date +"%Y%m%d_%H%M%S"`
 
 START_OPTS="$START_OPTS -Djava.io.tmpdir=${JAVALOG_DIR}"
-java $JMX_OPTS $START_OPTS -jar -server /opt/code/elk-demo/build/libs/${PROJECT_NAME}.jar
+java $JMX_OPTS $START_OPTS -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=12345 -Dcom.sun.management.jmxremote.authenticate=false  -Dcom.sun.management.jmxremote.ssl=false -jar -server /opt/code/elk-demo/build/libs/${PROJECT_NAME}.jar
