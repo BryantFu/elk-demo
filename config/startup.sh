@@ -8,4 +8,4 @@ JAVALOG_DIR="/opt/project/logs"
 DT=`date +"%Y%m%d_%H%M%S"`
 
 START_OPTS="$START_OPTS -Djava.io.tmpdir=${JAVALOG_DIR}"
-java $JMX_OPTS $START_OPTS -jar -server ${PROJECT_NAME}.jar
+java $JMX_OPTS $START_OPTS -jar -server /opt/code/elk-demo/build/libs/${PROJECT_NAME}.jar
