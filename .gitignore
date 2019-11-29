@@ -30,3 +30,5 @@ out/
 
 ### VS Code ###
 .vscode/
+!/logs/info.log
+/logs/info.log

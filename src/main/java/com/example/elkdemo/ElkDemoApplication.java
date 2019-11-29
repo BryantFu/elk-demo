@@ -20,9 +20,13 @@ public class ElkDemoApplication {
     }
 
     @GetMapping(value = "/test")
-    public String test() {
+    public String test() throws InterruptedException {
         List<String> stringList = new ArrayList<>();
-        stringList.get(1);
+        stringList.add("aa");
+        for (int i=0;i<10000; i++){
+            Thread.sleep(500);
+            stringList.get(0);
+        }
         return "成功";
     }
 }
