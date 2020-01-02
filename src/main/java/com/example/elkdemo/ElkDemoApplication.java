@@ -33,6 +33,8 @@ public class ElkDemoApplication {
 //            Thread.sleep(500);
 //            stringList.get(0);
 //        }
+        log.info("============启动成功================");
+        log.info("============启动成功================");
         System.out.println(System.getProperty("APPID"));
         return "成功";
     }
