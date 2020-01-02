@@ -1,0 +1,48 @@
+version: '1'
+services:
+  es1:
+    image: elasticsearch:6.5.4
+    container_name: es1
+    environment:
+      - cluster.name=escluster
+      - node.name=node1
+      - node.master=true
+      - discovery.zen.ping.unicast.hosts=es1,es2,es3
+      - discovery.zen.minimum_master_nodes=2
+      - network.host=0.0.0.0
+    volumes:
+      - /usr/local/dockerdata/es1/data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+  es2:
+    image: elasticsearch:6.5.4
+    container_name: es2
+    environment:
+      - cluster.name=escluster
+      - node.name=node2
+      - node.master=true
+      - discovery.zen.ping.unicast.hosts=es1,es2,es3
+      - discovery.zen.minimum_master_nodes=2
+      - network.host=0.0.0.0
+    volumes:
+      - /usr/local/dockerdata/es2/data:/usr/share/elasticsearch/data
+    ports:
+      - 9400:9200
+      - 9500:9300
+  es3:
+    image: elasticsearch:6.5.4
+    container_name: es3
+    environment:
+      - cluster.name=escluster
+      - node.name=node3
+      - node.master=true
+      - discovery.zen.ping.unicast.hosts=es1,es2,es3
+      - discovery.zen.minimum_master_nodes=2
+      - network.host=0.0.0.0
+
+    volumes:
+      - /usr/local/dockerdata/es3/data:/usr/share/elasticsearch/data
+    ports:
+      - 9600:9200
+      - 9700:9300
