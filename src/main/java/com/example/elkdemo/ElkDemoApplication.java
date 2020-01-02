@@ -16,17 +16,19 @@ public class ElkDemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ElkDemoApplication.class, args);
-//        log.info("============启动成功================");
+        log.info("============启动成功================");
     }
 
     @GetMapping(value = "/test")
     public String test() throws InterruptedException {
         List<String> stringList = new ArrayList<>();
         stringList.add("aa");
-        for (int i=0;i<10000; i++){
+        for (int i = 0; i < 10000; i++) {
             Thread.sleep(500);
             stringList.get(0);
         }
         return "成功";
     }
+
+
 }
