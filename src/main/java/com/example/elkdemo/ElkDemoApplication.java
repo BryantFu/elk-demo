@@ -27,15 +27,8 @@ public class ElkDemoApplication {
 
     @GetMapping(value = "/test")
     public String test() throws InterruptedException {
-//        List<String> stringList = new ArrayList<>();
-//        stringList.add("aa");
-//        for (int i = 0; i < 10000; i++) {
-//            Thread.sleep(500);
-//            stringList.get(0);
-//        }
+        log.debug("测试");
         log.info("============启动成功================");
-        log.info("============启动成功================");
-        System.out.println(System.getProperty("APPID"));
         return "成功";
     }
 
