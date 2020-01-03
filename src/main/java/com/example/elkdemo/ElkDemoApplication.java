@@ -28,7 +28,7 @@ public class ElkDemoApplication {
     @GetMapping(value = "/test")
     public String test() throws InterruptedException {
         log.debug("测试");
-        log.info("============启动成功================");
+        log.info("============请求成功================");
         return "成功";
     }
 
