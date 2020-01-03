@@ -7,6 +7,8 @@ PROJECT_NAME="elk-demo-1.0.0"
 JAVALOG_DIR="/opt/project/logs"
 DT=`date +"%Y%m%d_%H%M%S"`
 export APPID='elk-demo'
+gradle build
+gradle bootJar
 
 
 START_OPTS="$START_OPTS -Djava.io.tmpdir=${JAVALOG_DIR}"
