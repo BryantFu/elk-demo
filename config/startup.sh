@@ -6,7 +6,7 @@ fi
 PROJECT_NAME="elk-demo-1.0.0"
 JAVALOG_DIR="/opt/project/logs"
 DT=`date +"%Y%m%d_%H%M%S"`
-APPID='elk-demo'
+export APPID='elk-demo'
 
 
 START_OPTS="$START_OPTS -Djava.io.tmpdir=${JAVALOG_DIR}"
