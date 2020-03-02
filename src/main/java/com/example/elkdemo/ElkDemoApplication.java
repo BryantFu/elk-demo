@@ -1,5 +1,6 @@
 package com.example.elkdemo;
 
+import com.example.elkdemo.po.Employee;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -29,7 +30,13 @@ public class ElkDemoApplication {
     public String test() throws InterruptedException {
         log.debug("测试");
         log.info("============请求成功================");
+        System.out.println("sjfj");
         return "成功";
+    }
+
+    public static  <T> T environment1(Class<T> environmentClass) throws IllegalAccessException, InstantiationException {
+        T t = environmentClass.newInstance();
+        return t;
     }
 
 

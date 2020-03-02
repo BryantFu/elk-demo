@@ -10,9 +10,11 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+//@NoArgsConstructor
 public class Employee {
     private int id;
     private String name;
 
+    public Employee() {
+    }
 }

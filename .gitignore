@@ -32,3 +32,5 @@ out/
 .vscode/
 !/logs/info.log
 /logs/info.log
+/logs/logstash.json
+/logs/logstash.log
