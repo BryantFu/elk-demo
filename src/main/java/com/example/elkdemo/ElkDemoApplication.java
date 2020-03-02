@@ -30,7 +30,6 @@ public class ElkDemoApplication {
     public String test() throws InterruptedException {
         log.debug("测试");
         log.info("============请求成功================");
-        System.out.println("sjfj");
         return "成功";
     }
 
