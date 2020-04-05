@@ -33,5 +33,10 @@ public class EmployeeVo {
         String text = String.format(aa, true);
         System.out.println(text);
         text.equalsIgnoreCase("");
+        try {
+            Thread.sleep(800);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
